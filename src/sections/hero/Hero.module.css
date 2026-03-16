@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Bevan';
+    src: url('/fonts/Bevan-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+.title {
+    font-family: 'Bevan';
+    font-size: var(--fs-header);
+}

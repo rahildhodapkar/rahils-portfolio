@@ -44,3 +44,38 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* end of reset */
+
+:root {
+  --fs-header: clamp(2rem, 1.2rem + 3.2vw, 4rem);
+  --fs-subheader: clamp(1.25rem, 1rem + 1.6vw, 2rem);
+  --fs-body: clamp(1rem, 0.96rem + 0.25vw, 1.125rem);
+}
+
+:root {
+  color-scheme: light;
+  --color-primary: #4c1b41;
+  --color-secondary: #d78e44;
+  --color-accent: #4ca5a5;
+  --color-background: #fcebca;
+  --color-surface: #d78e44;
+  --color-text: #2e376b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-primary: #d78e44;
+    --color-secondary: #4ca5a5;
+    --color-accent: #fcebca;
+    --color-background: #2e376b;
+    --color-surface: #4c1b41;
+    --color-text: #fcebca;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
