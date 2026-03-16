@@ -1,2 +1,1 @@
-# rahils-portfolio
-My personal portfolio
+Rahil's portfolio
